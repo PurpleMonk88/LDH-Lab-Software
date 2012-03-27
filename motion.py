@@ -5,7 +5,7 @@ from os.path import exists
 #Setting up Parameters
 
 isColor     = 1
-filename    ="Test_20120309"
+filename    ="Ael_G_black_1_vidconv"
 maxCorners  = 2500
 
 
@@ -164,7 +164,7 @@ for a in range( int(frame_Cnt)-1):
     #cv.ShowImage("Background",backtot)
     #cv.ShowImage("Difference between frames",Dif_Frame)
     #imagesL.append(imgc)
-    #cv.WriteFrame(writer,OnTop)
+    cv.WriteFrame(writer,OnTop)
 	
 	
     #Break out of the loop when escape is pressed
