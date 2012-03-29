@@ -1,11 +1,11 @@
 from __future__ import division
-import cv, numpy, time, math, csv
+import cv, numpy, time, math, csv, cProfile
 from os.path import exists
 
 #Setting up Parameters
 
 isColor     = 1
-filename    ="Ael_G_black_1_vidconv"
+filename    ="Test_20120309"
 maxCorners  = 2500
 
 
@@ -160,7 +160,7 @@ for a in range( int(frame_Cnt)-1):
     #Display the Windows
 	
     #cv.ShowImage("Difference",Dif_Comb)
-    cv.ShowImage("Current",OnTop)
+    #cv.ShowImage("Current",OnTop)
     #cv.ShowImage("Background",backtot)
     #cv.ShowImage("Difference between frames",Dif_Frame)
     #imagesL.append(imgc)
@@ -169,6 +169,6 @@ for a in range( int(frame_Cnt)-1):
 	
     #Break out of the loop when escape is pressed
 	
-    if cv.WaitKey(10) == 27:
+    #if cv.WaitKey(0) == 27:
      #   cv.DestroyWindow("Current")
-        break
+    #    break
